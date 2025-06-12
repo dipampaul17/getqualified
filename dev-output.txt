@@ -1,0 +1,20 @@
+
+> qualify-ai@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.3.3
+   - Local:        http://localhost:3000
+   - Network:      http://10.0.0.234:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1332ms
+ ✓ Compiled /middleware in 127ms (108 modules)
+ ○ Compiling /dashboard ...
+[Error: Cannot apply unknown utility class `bg-background`. Are you using CSS modules or similar and missing `@reference`? https://tailwindcss.com/docs/functions-and-directives#reference-directive]
+ ✓ Compiled /dashboard in 1213ms (941 modules)
+ GET /dashboard 200 in 1698ms
+ ✓ Compiled /favicon.ico in 163ms (610 modules)
+ GET /favicon.ico 200 in 242ms
+ ✓ Compiled / in 244ms (963 modules)
+ GET / 200 in 361ms

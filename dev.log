@@ -1,0 +1,23 @@
+
+> qualify-ai@0.1.0 dev
+> next dev
+
+   ▲ Next.js 15.3.3
+   - Local:        http://localhost:3000
+   - Network:      http://10.0.0.234:3000
+   - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 1191ms
+ ✓ Compiled /middleware in 126ms (108 modules)
+ ○ Compiling / ...
+ ✓ Compiled / in 961ms (789 modules)
+ GET / 200 in 1192ms
+ ✓ Compiled /favicon.ico in 396ms (471 modules)
+ GET /favicon.ico 200 in 472ms
+ GET / 200 in 82ms
+ ✓ Compiled /dashboard in 405ms (977 modules)
+ GET /dashboard 200 in 570ms
+ GET /dashboard 200 in 29ms
+ ✓ Compiled /test in 149ms (970 modules)
+ GET /test 200 in 240ms
