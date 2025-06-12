@@ -238,7 +238,7 @@ export function SubscriptionManagement({ account }: SubscriptionManagementProps)
             Need help with billing?
           </p>
           <a 
-            href="mailto:billing@qualify.ai" 
+            href="mailto:billing@qualified.com" 
             className="text-blue-600 hover:text-blue-700 text-sm font-medium"
           >
             Contact our billing support →

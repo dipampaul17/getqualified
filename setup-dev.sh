@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "🚀 Setting up Qualify.ai Development Environment"
+echo "🚀 Setting up Qualified Development Environment"
 echo "================================================"
 
 # Create .env.local file
@@ -63,7 +63,7 @@ echo ""
 echo "2. Open http://localhost:3000 in your browser"
 echo ""
 echo "3. Test authentication:"
-echo "   - Email: demo@qualify.ai"
+echo "   - Email: demo@qualified.com"
 echo "   - Password: demo123"
 echo "   - Or use any OAuth provider (will use mock data)"
 echo ""

@@ -77,7 +77,7 @@ export default function OnboardPage() {
           <div className="mb-8">
             <Link href="/" className="inline-flex items-center mb-6">
               <div className="text-sm font-medium px-3 py-1 bg-zinc-100 text-zinc-700 rounded-full">
-                Qualify.ai
+                Qualified
               </div>
             </Link>
             <h1 className="text-2xl font-semibold text-zinc-900 mb-2">
@@ -269,7 +269,7 @@ export default function OnboardPage() {
           </div>
           <div className="mt-8 p-6 bg-white rounded-lg border border-zinc-200">
             <p className="text-sm text-zinc-600 italic">
-              "Qualify.ai helped us increase our demo conversion rate by 127% in just 2 weeks. The AI qualification is incredibly accurate."
+              "Qualified helped us increase our demo conversion rate by 127% in just 2 weeks. The AI qualification is incredibly accurate."
             </p>
             <div className="mt-4 flex items-center gap-3">
               <div className="w-10 h-10 bg-zinc-200 rounded-full" />

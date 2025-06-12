@@ -1,6 +1,17 @@
 (function() {
   'use strict';
   
+  // Expose qualify action to global scope for external control
+  window.qualify = function(action) {
+    if (action === 'open') {
+      openChat();
+    } else if (action === 'close') {
+      closeChat();
+    } else if (action === 'reset') {
+      resetWidget();
+    }
+  };
+  
   // Demo widget configuration
   const DEMO_CONFIG = {
     position: 'bottom-right',
@@ -273,29 +284,43 @@
   let currentQuestion = 0;
   let responses = {};
   let startTime = null;
+  
+  // Widget elements
+  let widget, button, chat, closeBtn, content;
 
   // Initialize widget
   function init() {
-    // Create container and inject HTML
-    const container = document.createElement('div');
-    container.innerHTML = widgetHTML;
-    document.body.appendChild(container.firstElementChild);
+    try {
+      // Create container and inject HTML
+      const container = document.createElement('div');
+      container.innerHTML = widgetHTML;
+      document.body.appendChild(container.firstElementChild);
 
-    // Get elements
-    const widget = document.getElementById('qualify-demo-widget');
-    const button = document.getElementById('qualify-demo-button');
-    const chat = document.getElementById('qualify-demo-chat');
-    const closeBtn = document.getElementById('qualify-demo-close');
-    const content = document.getElementById('qualify-demo-content');
+      // Get elements
+      widget = document.getElementById('qualify-demo-widget');
+      button = document.getElementById('qualify-demo-button');
+      chat = document.getElementById('qualify-demo-chat');
+      closeBtn = document.getElementById('qualify-demo-close');
+      content = document.getElementById('qualify-demo-content');
+      
+      console.log('Demo widget initialized successfully');
 
-    // Show widget after a delay
-    setTimeout(() => {
-      widget.style.display = 'block';
-    }, 2000);
+      // Show widget after a delay
+      setTimeout(() => {
+        widget.style.display = 'block';
+      }, 2000);
 
-    // Event listeners
-    button.addEventListener('click', () => openChat());
-    closeBtn.addEventListener('click', () => closeChat());
+      // Set up click handlers
+      button.addEventListener('click', () => {
+        openChat();
+      });
+      
+      closeBtn.addEventListener('click', () => {
+        closeChat();
+      });
+    } catch(error) {
+      console.error('Error initializing demo widget:', error);
+    }
 
     // Helper functions
     function openChat() {
@@ -394,6 +419,25 @@
       setTimeout(() => askQuestion(), 800);
     }
 
+    function resetWidget() {
+      // Reset state variables
+      currentQuestion = 0;
+      responses = {};
+      startTime = null;
+      
+      // Close chat if open
+      if (isOpen) {
+        closeChat();
+      }
+      
+      // Clear content
+      if (content) {
+        content.innerHTML = `<div class="qualify-demo-bot-message">${DEMO_CONFIG.welcomeMessage}</div>`;
+      }
+      
+      console.log('Demo widget has been reset');
+    }
+    
     function showResult() {
       // Calculate mock score based on responses
       let score = Math.random() * 0.4 + 0.6; // 60-100

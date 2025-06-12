@@ -99,85 +99,9 @@ export default function Home() {
           
           <div className="grid md:grid-cols-5 gap-8 items-start">
             <div className="md:col-span-3 bg-zinc-50 rounded-xl overflow-hidden border border-zinc-200 shadow-sm">
-              <div className="bg-white rounded-lg overflow-hidden">
-                {/* Browser chrome mockup */}
-                <div className="bg-gradient-to-b from-zinc-100 to-zinc-50 border-b border-zinc-200 p-3 flex items-center gap-2">
-                  <div className="flex space-x-1.5">
-                    <div className="w-3 h-3 rounded-full bg-red-400"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-400"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-400"></div>
-                  </div>
-                  <div className="flex-1 mx-auto max-w-sm">
-                    <div className="bg-white text-zinc-500 text-xs py-1 px-3 rounded-full border border-zinc-200 text-center overflow-hidden whitespace-nowrap text-ellipsis">yourcompany.com</div>
-                  </div>
-                </div>
-                
-                {/* Browser content with demo widget in view */}
-                <div className="h-[380px] bg-white relative overflow-hidden">
-                  {/* Website mockup content */}
-                  <div className="p-4">
-                    <div className="w-2/3 h-6 bg-zinc-100 rounded mb-3"></div>
-                    <div className="w-5/6 h-4 bg-zinc-100 rounded mb-2"></div>
-                    <div className="w-4/6 h-4 bg-zinc-100 rounded mb-6"></div>
-                    
-                    <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div className="h-24 bg-zinc-100 rounded"></div>
-                      <div className="h-24 bg-zinc-100 rounded"></div>
-                    </div>
-                    
-                    <div className="w-full h-4 bg-zinc-100 rounded mb-2"></div>
-                    <div className="w-5/6 h-4 bg-zinc-100 rounded mb-2"></div>
-                  </div>
-                  
-                  {/* Demo widget mockup - this shows what the widget looks like */}
-                  <div className="absolute bottom-4 right-4 shadow-xl rounded-lg overflow-hidden" style={{ width: '300px' }}>
-                    <div className="bg-black text-white p-4">
-                      <div className="flex justify-between items-center">
-                        <div className="font-medium">Qualify.ai Chat</div>
-                        <div className="w-6 h-6 flex items-center justify-center rounded-full hover:bg-white/10 cursor-pointer">
-                          ×
-                        </div>
-                      </div>
-                    </div>
-                    <div className="bg-white p-4 h-[260px] overflow-y-auto">
-                      <div className="mb-3 bg-zinc-100 p-3 rounded-lg text-sm">
-                        Hi! Experience how Qualify.ai works. This is a demo version.
-                      </div>
-                      <div className="mb-3 bg-zinc-100 p-3 rounded-lg text-sm">
-                        What brings you to Qualify.ai today?
-                      </div>
-                      <div className="mb-3 ml-8 bg-black text-white p-3 rounded-lg text-sm">
-                        Looking for a better way to qualify leads
-                      </div>
-                      <div className="mb-3 bg-zinc-100 p-3 rounded-lg text-sm">
-                        How large is your team?
-                      </div>
-                      <div className="space-y-2 mb-3">
-                        <div className="border border-zinc-200 hover:border-black p-2 rounded-md text-sm cursor-pointer text-center transition-colors">
-                          Just me
-                        </div>
-                        <div className="border border-zinc-200 hover:border-black p-2 rounded-md text-sm cursor-pointer text-center transition-colors">
-                          2-10
-                        </div>
-                        <div className="border border-black bg-zinc-50 p-2 rounded-md text-sm cursor-pointer text-center transition-colors">
-                          11-50
-                        </div>
-                        <div className="border border-zinc-200 hover:border-black p-2 rounded-md text-sm cursor-pointer text-center transition-colors">
-                          51-200
-                        </div>
-                        <div className="border border-zinc-200 hover:border-black p-2 rounded-md text-sm cursor-pointer text-center transition-colors">
-                          200+
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Demo widget button */}
-                  <div className="absolute bottom-4 right-4 transform translate-y-[300px]">
-                    <button className="bg-black text-white px-4 py-2 rounded-full text-sm shadow-lg">
-                      Try Demo Chat
-                    </button>
-                  </div>
+              <div className="h-[420px] bg-zinc-100 flex items-center justify-center">
+                <div className="text-zinc-500 text-sm">
+                  Demo Widget Preview
                 </div>
               </div>
             </div>

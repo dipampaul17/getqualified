@@ -1,6 +1,6 @@
 // App Configuration
 export const APP_CONFIG = {
-  NAME: 'Qualify.ai',
+  NAME: 'Qualified',
   DESCRIPTION: 'AI-powered lead qualification widget',
   VERSION: '1.0.0',
   WIDGET_SIZE_LIMIT: 4096, // 4KB in bytes

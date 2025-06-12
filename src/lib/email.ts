@@ -37,7 +37,7 @@ export async function sendEmail(options: EmailOptions): Promise<boolean> {
     
     await sgMail.send({
       to: options.to,
-      from: 'notifications@qualify.ai',
+      from: 'notifications@qualified.com',
       subject: options.subject,
       text: options.text,
       html: options.html,
@@ -163,13 +163,13 @@ export function generateWelcomeEmail(userName: string, apiKey: string): EmailOpt
       <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Welcome to Qualify.ai</title>
+        <title>Welcome to Qualified</title>
       </head>
       <body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; margin: 0; padding: 0; background-color: #f3f4f6;">
         <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
           <div style="background-color: #ffffff; border-radius: 8px; padding: 32px; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
             <h1 style="color: #111827; font-size: 24px; font-weight: 600; margin: 0 0 8px 0;">
-              Welcome to Qualify.ai, ${userName}! 🎉
+              Welcome to Qualified, ${userName}! 🎉
             </h1>
             
             <p style="color: #6b7280; font-size: 16px; margin: 0 0 24px 0;">
@@ -213,7 +213,7 @@ export function generateWelcomeEmail(userName: string, apiKey: string): EmailOpt
   `;
   
   const text = `
-Welcome to Qualify.ai, ${userName}! 🎉
+Welcome to Qualified, ${userName}! 🎉
 
 You're all set to start qualifying leads with AI. Here's everything you need to get started.
 
@@ -233,7 +233,7 @@ Need help? Check out our documentation at ${process.env.NEXT_PUBLIC_APP_URL}/doc
   
   return {
     to: '', // Will be filled by caller
-    subject: 'Welcome to Qualify.ai! 🚀',
+    subject: 'Welcome to Qualified! 🚀',
     html,
     text
   };

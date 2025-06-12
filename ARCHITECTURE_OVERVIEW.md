@@ -1,4 +1,4 @@
-# Qualify.ai Architecture Overview
+# Qualified Architecture Overview
 
 ## System Components
 
@@ -213,7 +213,7 @@ SLACK_CLIENT_ID/SECRET=
 
 ## Conclusion
 
-Qualify.ai is built with a modern, scalable architecture that prioritizes:
+Qualified is built with a modern, scalable architecture that prioritizes:
 - **Performance**: Sub-100ms widget loads
 - **Security**: Multiple layers of protection
 - **Reliability**: Graceful degradation

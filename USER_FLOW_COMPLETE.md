@@ -189,7 +189,7 @@ User → Widget → API (validate) → AI Score → Database → Webhooks → Da
 
 ## 🎉 Summary
 
-The Qualify.ai MVP is now feature-complete with:
+The Qualified MVP is now feature-complete with:
 - **Complete user journey** from landing to power user
 - **Secure authentication** with multiple providers
 - **Real-time lead qualification** with AI scoring

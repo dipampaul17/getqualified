@@ -42,7 +42,7 @@ export default function LoginPage() {
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center mb-6">
             <div className="text-sm font-medium px-3 py-1 bg-zinc-100 text-zinc-700 rounded-full">
-              Qualify.ai
+              Qualified
             </div>
           </Link>
           <h1 className="text-2xl font-semibold text-zinc-900 mb-2">

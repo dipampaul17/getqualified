@@ -40,7 +40,7 @@ export default function SettingsPage() {
       if (process.env.NODE_ENV === 'development') {
         const mockAccount = {
           id: 'dev-account-123',
-          email: 'demo@qualify.ai',
+          email: 'demo@qualified.com',
           company_name: 'Demo Company',
           api_key: 'pk_test_demo123456789',
           plan: 'free',

@@ -5,25 +5,28 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Qualify.ai - AI-Powered Lead Qualification",
+  icons: {
+    icon: '/favicon.svg',
+  },
+  title: "Qualified - AI-Powered Lead Qualification",
   description: "Instantly qualify leads with AI and increase demo bookings by 40%",
   openGraph: {
-    title: "Qualify.ai - AI-Powered Lead Qualification",
+    title: "Qualified - AI-Powered Lead Qualification",
     description: "Instantly qualify leads with AI and increase demo bookings by 40%",
-    url: "https://qualify.ai",
-    siteName: "Qualify.ai",
+    url: "https://qualified.com",
+    siteName: "Qualified",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Qualify.ai - AI-Powered Lead Qualification",
+    title: "Qualified - AI-Powered Lead Qualification",
     description: "Instantly qualify leads with AI and increase demo bookings by 40%",
   },
   // Mobile app settings
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "Qualify.ai",
+    title: "Qualified",
   },
   formatDetection: {
     telephone: false,
@@ -48,7 +51,7 @@ export default function RootLayout({
       <head>
         {/* Preconnect to external domains for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://api.qualify.ai" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://api.qualified.com" crossOrigin="anonymous" />
         
         {/* Safari mobile specific fixes */}
         <meta name="apple-mobile-web-app-capable" content="yes" />

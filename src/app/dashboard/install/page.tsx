@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Copy, Check, ArrowRight, Code, Globe, Zap, RefreshCw } from 'lucide-react';
+import { Logo, LogoSymbol } from "@/components/ui/logo";
 
 export default function InstallPage() {
   const router = useRouter();
@@ -30,18 +31,18 @@ export default function InstallPage() {
   };
 
   const getInstallCode = () => {
-    return `<!-- Qualify.ai Widget -->
+    return `<!-- Qualified Widget -->
 <script>
   (function(w,d,s,o,f,js,fjs){
     w['QualifyWidget']=o;w[o]=w[o]||function(){
     (w[o].q=w[o].q||[]).push(arguments)};
     js=d.createElement(s),fjs=d.getElementsByTagName(s)[0];
     js.id=o;js.src=f;js.async=1;fjs.parentNode.insertBefore(js,fjs);
-  }(window,document,'script','qualify','${process.env.NEXT_PUBLIC_APP_URL || 'https://qualify.ai'}/widget.js'));
+  }(window,document,'script','qualify','${process.env.NEXT_PUBLIC_APP_URL || 'https://qualified.com'}/widget.js'));
   
   qualify('init', '${apiKey}');
 </script>
-<!-- End Qualify.ai Widget -->`;
+<!-- End Qualified Widget -->`;
   };
 
   const copyToClipboard = async () => {
@@ -109,7 +110,10 @@ export default function InstallPage() {
       <div className="bg-white border-b border-zinc-200">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <h1 className="text-lg font-semibold text-zinc-900">Install Qualify.ai Widget</h1>
+            <div className="flex items-center gap-3">
+              <LogoSymbol size="sm" />
+              <h1 className="text-lg font-medium text-black tracking-tight">Install Widget</h1>
+            </div>
             <Button
               variant="ghost"
               size="sm"

@@ -1,4 +1,4 @@
-# Qualify.ai End-to-End Testing Guide
+# Qualified End-to-End Testing Guide
 
 ## 🚀 Quick Start
 
@@ -26,7 +26,7 @@ http://localhost:3000
 #### Email Authentication
 - Click "Sign in" in the navigation
 - Test with demo credentials:
-  - Email: `demo@qualify.ai`
+  - Email: `demo@qualified.com`
   - Password: `demo123`
 
 #### OAuth Authentication (Development Mode)

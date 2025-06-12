@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
     if (process.env.NODE_ENV === 'development') {
       return NextResponse.json({
         id: session.accountId || 'dev-account-123',
-        email: session.user?.email || 'demo@qualify.ai',
+        email: session.user?.email || 'demo@qualified.com',
         company_name: 'Demo Company',
         api_key: 'pk_test_demo123456789',
         plan: 'free',

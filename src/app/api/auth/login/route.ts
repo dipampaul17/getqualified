@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
     // In development mode without Supabase, mock authentication
     if (process.env.NODE_ENV === 'development' && !supabaseUrl) {
       // Simple mock authentication
-      if (email === 'demo@qualify.ai' && password === 'demo123') {
+      if (email === 'demo@qualified.com' && password === 'demo123') {
         const response = NextResponse.json({ success: true });
         
         // Set session cookie
