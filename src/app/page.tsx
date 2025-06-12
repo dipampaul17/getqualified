@@ -6,6 +6,10 @@ import { DemoWidgetLoader } from "@/components/demo-widget-loader";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
+      {/* Debug element */}
+      <div className="fixed top-0 left-0 w-32 h-32 bg-red-500 z-[9999] flex items-center justify-center text-white font-bold">
+        DEBUG BOX
+      </div>
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/60 backdrop-blur-xl z-50 border-b border-zinc-100">
         <div className="max-w-6xl mx-auto px-6">
